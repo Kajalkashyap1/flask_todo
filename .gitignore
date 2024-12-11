@@ -1,0 +1,50 @@
+# Byte-compiled Python files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment Variables and Config Files
+.env
+*.env
+*.env.*
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# Logs
+*.log
+logs/
+*.pid
+
+# Cache
+*.cache
+.cache/
+*.egg-info/
+.eggs/
+
+# Database
+*.sqlite3
+*.db
+instance/
+migrations/
+
+# Pytest Cache
+.pytest_cache/
+
+# Static and Compiled Assets
+*.staticfiles/
+*.sass-cache/
+*.map
+
+# IDE and Editor Settings
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Flask Debug Files
+flask-session/

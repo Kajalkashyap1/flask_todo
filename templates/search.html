@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+{% for todo in results %}
+    <div class="jumbotron">
+        
+        <h1 class="display-4">{{todo.title}}</h1>
+        <p class="lead">{{todo.desc}}</p>
+        <hr class="my-4">
+
+        <a
+            href="/update/{{todo.sno}}"
+            type="button"
+            class="btn btn-outline-dark btn-sm mx-1"
+            >Update
+        </a>
+
+        <a
+            href="/delete/{{todo.sno}}"
+            type="button"
+            class="btn btn-outline-dark btn-sm mx-1"
+            >Delete
+        </a>
+        
+    </div>   
+
+{% endfor %}
+  
+{% endblock body %}
